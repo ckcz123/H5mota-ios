@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zkD-m1-HTD">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Offline Game List View Controller-->
+        <scene sceneID="hd6-7M-NfQ">
+            <objects>
+                <viewController id="jIM-fJ-khd" customClass="OfflineGameListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qjs-sq-Ttf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aPC-Xv-EFz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lvf-Jd-yu9"/>
+                    <connections>
+                        <segue destination="B4N-YK-AGv" kind="show" id="qJ0-7h-BjV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N87-7f-FiE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933.5877862595419" y="654.92957746478874"/>
+        </scene>
+        <!--Offline Game View Controller-->
+        <scene sceneID="M9o-o4-Vat">
+            <objects>
+                <viewController storyboardIdentifier="offlineGame" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B4N-YK-AGv" customClass="OfflineGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Zr-Fx-HGX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8gE-FM-f1U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iWB-dT-TdJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lIW-fm-aCU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1135" y="1405"/>
+        </scene>
+        <!--Online Game-->
+        <scene sceneID="3vn-L3-51n">
+            <objects>
+                <viewController id="szc-3I-wiG" customClass="OnlineGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="592-RH-z7k">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0t0-yA-r9Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Online Game" image="gamecontroller" catalog="system" id="9qf-RA-yrF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zU1-Xv-eqV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188.54961832061068" y="654.92957746478874"/>
+        </scene>
+        <!--Forum-->
+        <scene sceneID="MSw-da-7Qh">
+            <objects>
+                <viewController id="97o-aM-BHZ" customClass="ForumViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y3D-F5-fVq" customClass="Fo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QLa-sx-vtp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Forum" image="message.circle.fill" catalog="system" id="kKl-3v-cmP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqf-bD-BLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2765.6488549618321" y="620.42253521126759"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="QLv-Ow-h3U">
+            <objects>
+                <tabBarController id="zkD-m1-HTD" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8UZ-cN-uTI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="szc-3I-wiG" kind="relationship" relationship="viewControllers" id="QW7-bM-49o"/>
+                        <segue destination="y6Z-Uv-hnA" kind="relationship" relationship="viewControllers" id="b4Q-jN-YCd"/>
+                        <segue destination="97o-aM-BHZ" kind="relationship" relationship="viewControllers" id="P3r-fq-fGk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYP-C3-KFQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="-117"/>
+        </scene>
+        <!--Offline Game-->
+        <scene sceneID="ZL0-M5-8dR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y6Z-Uv-hnA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Offline Game" image="gamecontroller.fill" catalog="system" id="pw1-6C-fOy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="00N-TZ-Kjy">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jIM-fJ-khd" kind="relationship" relationship="rootViewController" id="ALi-p7-Zbp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eyj-6M-IbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006.8702290076335" y="654.92957746478874"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="79"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="79"/>
+        <image name="message.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
